@@ -1,0 +1,305 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+	<title>DOWN-LINK(FWD) tool</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <meta name="format-detection" content="telephone=no">   
+  <link href="http://letstennis.nayana.kr/enm/img/bgB1.png" rel="apple-touch-icon-precomposed"> 	
+  <link rel="stylesheet" type="text/css" href="_mcssa.css">	
+<script src="prototype.js"></script><!-- ajax를 사용하기 위해 prototype의 경로를 넣어줘야 한다-->
+<script language="javascript">
+function change_select1()
+{
+    //alert("work44");
+new Ajax.Updater('s_rlt1', 'ddd.php?des=1', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt2', 'ddd.php?des=2', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt3', 'ddd.php?des=3', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt4', 'ddd.php?des=4', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt5', 'ddd.php?des=5', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt6', 'ddd.php?des=6', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt7', 'ddd.php?des=7', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt8', 'ddd.php?des=8', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt9', 'ddd9.php', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('s_rlt10', 'ddd.php', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt3', 'ddd.php?des=3', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt4', 'ddd.php?des=4', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt5', 'ddd.php?des=5', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt6', 'ddd.php?des=6', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt7', 'ddd.php?des=7', {method: 'post', parameters: $('select_form').serialize()}); 
+//new Ajax.Updater('s_rlt8', 'ddd.php?des=8', {method: 'post', parameters: $('select_form').serialize()}); 
+//$('select_form').reset();
+//new Ajax.Updater('s_result1', 'dddc1.php', {method: 'post', parameters: $('select_form').serialize()}); //$('select_form').reset();
+//new Ajax.Updater('s_result2', 'dddc2.php', {method: 'post', parameters: $('select_form').serialize()}); //$('select_form').reset();
+}
+
+function change_sl()
+{
+    //alert("work44");
+new Ajax.Updater('l_rlt1', 'lddd.php?des=1', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt2', 'lddd.php?des=2', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt3', 'lddd.php?des=3', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt4', 'lddd.php?des=4', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt5', 'lddd.php?des=5', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt6', 'lddd.php?des=6', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt7', 'lddd.php?des=7', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt8', 'lddd.php?des=8', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt9', 'lddd.php?des=9', {method: 'post', parameters: $('select_form').serialize()}); 
+new Ajax.Updater('l_rlt10', 'lddd.php', {method: 'post', parameters: $('select_form').serialize()}); 
+
+}
+</script>
+
+  <script type="text/javascript">    
+        // <![CDATA[
+        // toolbar hide
+        try {
+            window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+        }, false);
+        } catch(e) {}
+        // ]]>
+ </script>
+
+</head>
+
+
+<body>
+
+       <div id="contentsWrap">
+
+<div id="topListWrap">
+
+<h2 class="news_h">
+DOWN-LINK(FWD)<font size="-1">(ocns 적용 후 사용)</font> [<a href="rvs.html" target="_self">UP-LINK(RVS)</a>]
+</h2>
+<form action="index.html" method="get" id="select_form" name="select_form">
+<table border="1" cellpadding="1" cellspacing="2" width="100%">
+<tbody><tr height="30"><th colspan="2" bgcolor="orange" width="50%">MHU</th><th colspan="2" bgcolor="green" width="50%">ROU</th></tr>
+ <tr height="30"><td align="center" bgcolor="#f5bca9" width="40">1.LRIU<br>종류</td>
+ <td bgcolor="#cee3f6">
+  <select name="sriu" onchange="change_select1()">
+  <option value="">-선택-</option>
+  <option value="LRIU">SEC(LRIU)</option>
+  <option value="RUD">SEC(RUD)</option>
+  <option value="MRIR">ELG(MRIR)</option>
+  <option value="RIR0180">ELG(RRUS0180)</option>
+  <option value="RIR1280">ELG(RRUS1280)</option>
+  <option value="RIR1260">ELG(RIR1260)</option>
+  <option value="RIR1240">ELG(RIR1240)</option>
+  <option value="RIR1210">ELG(RIR1210)</option>
+  </select>
+  </td>
+  <td align="center" bgcolor="#f5bca9" width="40">5.ROU정격<br>출력입력</td>
+  <td bgcolor="#cee3f6">
+  <select name="rous" onchange="change_select1()">
+  <option value="">-선택-</option>
+  <option value="46">46</option>
+  <option value="43">43</option>
+  <option value="40">40</option>
+  </select>
+  </td>
+ </tr>
+ 
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">2.LRIU/RUD<br>출력값</td>
+ <td align="center" bgcolor="#f5bca9">LRIU/RUD 출력값 불량유무</td>
+ <td align="center" bgcolor="#f5bca9">6.ROU 출력</td>
+ <td align="center" bgcolor="#f5bca9">ROU 출력 불량유무</td>
+ </tr>
+ 
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">
+ <input type="text" name="rutx" size="3" onchange="change_select1()"></td>
+  <td bgcolor="#cee3f6">
+  <div id="s_rlt1"></div>
+  </td>
+ <td align="center" bgcolor="#f5bca9">
+ <input type="text" name="routx" size="3" onchange="change_select1()"></td>
+ <td bgcolor="#cee3f6">
+  <div id="s_rlt2"></div>
+  </td> 
+ </tr>
+
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">3.MHU Tx<br>IF</td>
+ <td align="center" bgcolor="#f5bca9">MHU Tx IF 불량유무</td>
+ <td align="center" bgcolor="#f5bca9">7.ROU Tx ATT</td>
+ <td align="center" bgcolor="#f5bca9">ROU Tx ATT 불량유무</td>
+ </tr>
+ 
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">
+ <input type="text" name="mhutx" size="3" onchange="change_select1()"></td>
+  <td bgcolor="#cee3f6">
+  <div id="s_rlt3"></div>
+  </td>
+ <td align="center" bgcolor="#f5bca9">
+ <input type="text" name="rouatt" size="3" onchange="change_select1()"></td>
+ <td bgcolor="#cee3f6">
+  <div id="s_rlt4"></div>
+  </td> 
+ </tr>
+
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">4.MHU Tx<br>ATT</td>
+ <td align="center" bgcolor="#f5bca9">Tx ATT 불량유무</td>
+ <td align="center" bgcolor="#f5bca9">RRFU증폭 GAIN</td>
+ <td align="center" bgcolor="#f5bca9">RRFU 현재 증폭도</td>
+ </tr>
+ 
+ <tr height="30">
+ <td align="center" bgcolor="#f5bca9">
+ <input type="text" name="mhuatt" size="3" onchange="change_select1()"></td>
+  <td bgcolor="#cee3f6" align="center">
+  <div id="s_rlt5"></div>
+  </td>
+  <td bgcolor="#cee3f6" align="center">
+  <div id="s_rlt6"></div>
+  </td>
+ <td bgcolor="#cee3f6" align="center">
+  <div id="s_rlt7"></div>
+  </td> 
+ </tr>
+ 
+ <tr height="30">
+ <th bgcolor="#f5bca9">MHU 입력<br>계산치</th>
+ <th bgcolor="red"><font color="#ffffff">진단결과</font></th>
+ <th bgcolor="red" colspan="2"><font color="#ffffff">진단결과</font></th>
+ </tr>
+ 
+ <tr height="30">
+  <td bgcolor="#cee3f6" align="center">
+  <div id="s_rlt8"></div>
+  </td>
+  <td bgcolor="#cee3f6" align="center">
+  <div id="s_rlt9"></div>
+  </td>
+ <th bgcolor="#cee3f6" colspan="2">
+  <div id="s_rlt10"></div>
+  </th> 
+ </tr>
+ 
+
+ <tr height="60"><td align="center" colspan="6">[확인]</td></tr>
+</tbody></table>
+<!--
+<h2 class="news_h">
+ELG 권역<font size=-1>(ocns 적용 후 사용)</font>
+</h2>
+<table border="1" cellpadding="1" cellspacing="2" width="100%">
+<tr height=30><th colspan=2 bgcolor='orange'>MHU</th><th colspan=2 bgcolor='green'>ROU</th></tr>
+ <tr height=30><td align=center bgcolor=#f5bca9>1.LRIU<br>종류</td>
+ <td bgcolor=#cee3f6>
+  <select name='lsriu' onchange="change_sl()">
+  <option value=''>-선택-</option>
+  <option value='MRIR'>MRIR</option>
+  <option value='RIR0180'>RIR0180</option>
+  <option value='RIR1280'>RIR1280</option>
+  <option value='RIR1260'>RIR1260</option>
+  <option value='RIR1240'>RIR1240</option>
+  <option value='RIR1210'>RIR1210</option>
+  </select>
+  </td>
+  <td align=center bgcolor=#f5bca9>5.ROU정격<br>출력입력</td>
+  <td bgcolor=#cee3f6>
+  <select name='lrous' onchange="change_sl()">
+  <option value=''>-선택-</option>
+  <option value='46'>46</option>
+  <option value='43'>43</option>
+  <option value='40'>40</option>  </td>
+ </tr>
+ 
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>2.LRIU<br>출력값</td>
+ <td align=center bgcolor=#f5bca9>LRIU 출력값 불량유무</td>
+ <td align=center bgcolor=#f5bca9>6.ROU 출력</td>
+ <td align=center bgcolor=#f5bca9>ROU 출력 불량유무</td>
+ </tr>
+ 
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>
+ <input type='text' name='lrutx' size='3' onchange="change_sl()"></td>
+  <td bgcolor=#cee3f6>
+  <div id='l_rlt1'></div>
+  </td>
+ <td align=center bgcolor=#f5bca9>
+ <input type='text' name='lroutx' size='3' onchange="change_sl()"></td>
+ <td bgcolor=#cee3f6>
+  <div id='l_rlt2'></div>
+  </td> 
+ </tr>
+
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>3.MHU Tx<br>IF</td>
+ <td align=center bgcolor=#f5bca9>MHU Tx IF 불량유무</td>
+ <td align=center bgcolor=#f5bca9>7.ROU Tx ATT</td>
+ <td align=center bgcolor=#f5bca9>ROU Tx ATT 불량유무</td>
+ </tr>
+ 
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>
+ <input type='text' name='lmhutx' size='3' onchange="change_sl()"></td>
+  <td bgcolor=#cee3f6>
+  <div id='l_rlt3'></div>
+  </td>
+ <td align=center bgcolor=#f5bca9>
+ <input type='text' name='lrouatt' size='3' onchange="change_sl()"></td>
+ <td bgcolor=#cee3f6>
+  <div id='l_rlt4'></div>
+  </td> 
+ </tr>
+
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>4.MHU Tx<br>ATT</td>
+ <td align=center bgcolor=#f5bca9>Tx ATT 불량유무</td>
+ <td align=center bgcolor=#f5bca9>RRFU증폭 GAIN</td>
+ <td align=center bgcolor=#f5bca9>RRFU 현재 증폭도</td>
+ </tr>
+ 
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>
+ <input type='text' name='lmhuatt' size='3' onchange="change_sl()"></td>
+  <td bgcolor=#cee3f6 align=center>
+  <div id='l_rlt5'></div>
+  </td>
+  <td bgcolor=#cee3f6 align=center>
+  <div id='l_rlt6'></div>
+  </td>
+ <td bgcolor=#cee3f6 align=center>
+  <div id='l_rlt7'></div>
+  </td> 
+ </tr>
+ 
+ <tr height=30>
+ <td align=center bgcolor=#f5bca9>MHU 입력<br>계산치</td>
+ <td align=center bgcolor=#f5bca9>MHU~LRIU간 LOSS 계산치</td>
+ <td align=center bgcolor=red colspan=2>진단결과</td>
+ </tr>
+ 
+ <tr height=30>
+  <td bgcolor=#cee3f6 align=center>
+  <div id='l_rlt8'></div>
+  </td>
+  <td bgcolor=#cee3f6 align=center>
+  <div id='l_rlt9'></div>
+  </td>
+ <th bgcolor=#cee3f6 colspan=2>
+  <div id='l_rlt10'></div>
+  </th> 
+ </tr>
+ 
+
+ <tr height=60><td align=center colspan=6>[확인]</td></tr>
+</table>
+-->
+<p align="center"><input type="reset" value="Clear"></p>
+</form>
+		
+	</div>
+
+</div>
+
+&nbsp;<p>
+
+
+
+</p></body></html>
